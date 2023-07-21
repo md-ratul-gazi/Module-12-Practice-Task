@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module 12 Practice Task</title>
 
+    <!-- Tailwind CSS cdn link here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS cdn link here -->
+
     <!-- Google font link here -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +20,7 @@
 
     <!-- CSS style here -->
     <style>
-      .font-bebas {
+      .font-babes {
         font-family: "Bebas Neue", sans-serif;
       }
       .font-roboto {
@@ -26,6 +30,73 @@
     <!-- CSS style here -->
   </head>
   <body>
-    
+    <!-- Header section starts here -->
+    <header class="bg-[#FFFBF0] md:px-32 md:pt-11 px-6 py-4">
+      <!-- Nav section starts here -->
+      <nav class="flex md:flex-row flex-col justify-between items-center mb-5">
+        <div class="md:w-96 w-40 mb-5">
+          <img src="icons/logo.png" alt="Navbar Logo" />
+        </div>
+        <div>
+          <ul class="flex gap-7 md:flex-row flex-col text-center">
+            <li class="text-base font-medium font-roboto text-[#3C3C3C]">
+              <a href="#">Home</a>
+            </li>
+            <li class="text-base font-medium font-roboto text-[#3C3C3C]">
+              <a href="#">Product</a>
+            </li>
+            <li class="text-base font-medium font-roboto text-[#3C3C3C]">
+              <a href="#">About Ust</a>
+            </li>
+            <li class="text-base font-medium font-roboto text-[#3C3C3C]">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Nav section ends here -->
+
+      <!-- Banner section starts here -->
+      <div class="flex md:flex-row flex-col space-y-6 justify-between items-center pb-10">
+        <div class="font-normal space-y-2">
+          <h2 class="md:text-7xl text-5xl	 text-[#363958] font-babes">
+            <span class="text-[#FABE4C]">Be the Penguins</span> <br />
+            of Winter
+          </h2>
+          <p class="text-[#3E3E3E] text-xs font-roboto">
+            Lorem Ipsum is simply dummy text of the printing <br />
+            and typesetting industry.
+          </p>
+          <button
+            class="font-roboto text-[#fff] font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg py-5 px-8 flex gap-x-2"
+          >
+            <!-- Shopping Cart icon here -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+
+            <!-- Shopping Cart icon here -->
+            BUY NOW
+          </button>
+        </div>
+
+        <div>
+          <img src="images/model.png" alt="Model" />
+        </div>
+      </div>
+      <!-- Banner section ends here -->
+    </header>
+    <!-- Header section ends here -->
   </body>
 </html>
